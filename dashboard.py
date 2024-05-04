@@ -5,7 +5,7 @@ import pdfReader
 
 def upload_file(file):
     try:
-        file_path = os.path.join("D:\AI_ML\pdfReader\Document", file.name)
+        file_path = os.path.join("./Document", file.name)
         with open(file_path, "wb") as f:
             f.write(file.read())
         return file_path
